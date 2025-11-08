@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sanaka Vineela</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-container {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(96, 165, 250, 0.3);
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      max-width: 450px;
+      width: 100%;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 25px rgba(59, 130, 246, 0.2);
+      transition: all 0.4s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 40px rgba(59, 130, 246, 0.4);
+    }
+
+    .contact-card h2 {
+      color: #93c5fd;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .contact-card p {
+      color: #e2e8f0;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #60a5fa;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 25px;
+      padding: 12px 20px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-link:hover {
+      background: #60a5fa;
+      color: #0a0f24;
+      transform: scale(1.05);
+    }
+
+    .contact-link svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    @media (max-width: 600px) {
+      .contact-card {
+        padding: 2rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <nav>
+    <h1 class="brand-name">Sanaka Vineela</h1>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact-container">
+    <div class="contact-card">
+      <h2>Let’s Connect 🫱🏻‍🫲🏼</h2>
+      <p>I’d love to collaborate, discuss opportunities, or just have a tech chat!</p>
+
+      <div class="contact-links">
+
+        <a class="contact-link" href="https://github.com/Vineela-16" target="_blank">
+          👾 GitHub: Vineela-16
+        </a>
+
+         <a class="contact-link" href="https://www.linkedin.com/in/vineela-sanaka-61a5812a4/" target="_blank">
+          🔗 LinkedIn: vineela-sanaka-61a5812a4
+        </a>
+
+        <a class="contact-link" href="mailto:vinny16.snk@gmail.com">
+          📧 Email: vinny16.snk@gmail.com
+        </a>
+        </div>
+    </div>
+  </section>
+          
+  <footer>
+    © 2025 Sanaka Vineela | All Rights Reserved
+  </footer>
+</body>
+</html>

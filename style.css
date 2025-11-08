@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500;600&display=swap');
+
+/* ==== NAME / BRAND SPECIAL STYLE ==== */
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #93c5fd; /* soft light blue */
+  letter-spacing: 1px;
+}
+
+/* For large heading on Home page */
+.highlight-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 2.6rem;
+  color: #93c5fd; /* same blue for consistency */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #e2e8f0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* ==== STAR BACKGROUND ==== */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at bottom, #0a0f24 0%, #020617 100%);
+  z-index: -2;
+}
+
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: transparent url("https://raw.githubusercontent.com/Vineela-16/star-bg/main/stars.png") repeat top center;
+  animation: moveStars 200s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveStars {
+  from {background-position: 0 0;}
+  to {background-position: -10000px 5000px;}
+}
+
+/* ==== NAVBAR ==== */
+nav {
+  background: rgba(10, 15, 36, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10%;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  color: #93c5fd;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #60a5fa;
+}
+
+/* ==== HOME PAGE LAYOUT ==== */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10%;
+  min-height: 90vh;
+  gap: 2rem;
+}
+
+.home .info {
+  flex: 1;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  color: #93c5fd;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e2e8f0;
+  margin-bottom: 1.5rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.skill {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #60a5fa;
+  color: #60a5fa;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  background: #60a5fa;
+  color: #0a0f24;
+}
+
+.resume-btn {
+  display: inline-block;
+  background: #60a5fa;
+  color: #0a0f24;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #93c5fd;
+  transform: scale(1.05);
+}
+
+/* ==== PHOTO ==== */
+.photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.photo img {
+  width: 280px;
+  height: 320px;
+  border-radius: 10px; /* gentle corners instead of full circle */
+  border: 3px solid #60a5fa;
+  box-shadow: 0 0 25px rgba(96, 165, 250, 0.3);
+  object-fit: cover;
+}
+
+
+/* ==== PROJECTS ==== */
+.projects {
+  padding: 4rem 10%;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #60a5fa;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.project-card h3 {
+  color: #93c5fd;
+  margin-bottom: 0.5rem;
+}
+
+.project-card a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* ==== CONTACT ==== */
+.contact {
+  padding: 4rem 10%;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #93c5fd;
+  margin-bottom: 1rem;
+}
+
+.contact a {
+  display: block;
+  color: #60a5fa;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #93c5fd;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: rgba(10,15,36,0.9);
+  color: #cbd5e1;
+}
